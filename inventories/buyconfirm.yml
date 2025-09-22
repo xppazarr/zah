@@ -1,0 +1,46 @@
+name: '&8Purchase'
+size: 27
+items:
+  buy:
+    type: ZAUCTIONHOUSE_BUY_CONFIRM
+    item:
+      material: STAINED_GLASS_PANE
+      data: 13 # GREEN pour la version 1.8
+      name: ''
+      lore:
+        - "      &2✔ Purchase"
+        - "           &7&m      "
+        - ""
+        - " &7• &9Click &aTo Purchase &7• "
+    slots:
+    - 0-2
+    - 9-11
+    - 18-20
+  deny:
+    type: BACK
+    item:
+      material: STAINED_GLASS_PANE
+      data: 14 # RED pour la version 1.8
+      name: ""
+      lore:
+        - "          &4Back"
+        - "          &7&m      "
+        - ""
+        - " &7• &9Click &aTo Go Back &7• "
+    slots:
+    - 6-8
+    - 15-17
+    - 24-26
+  slot:
+    item:
+      material: STAINED_GLASS_PANE
+      data: 7 # GRAY pour la version 1.8
+      name: '&e'
+    slots:
+    - 3-5
+    - 12
+    - 14
+    - 21-23
+  show:
+    type: ZAUCTIONHOUSE_SHOW_BUY
+    slot: 13

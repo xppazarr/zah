@@ -1,0 +1,33 @@
+name: '&8Sell Inventory'
+size: 54
+
+patterns:
+  - "zauctionhouse_decoration"
+
+items:
+  items:
+    type: ZAUCTIONHOUSE_SELL_INVENTORY_SLOT
+    slots:
+    - 10-16
+    - 19-25
+    - 28-34
+    - 37-43
+  cancel:
+    slot: 48
+    closeInventory: true
+    item:
+      material: STAINED_GLASS_PANE
+      data: 14 # Rouge pour la version 1.8
+      name: ""
+      lore:
+        - "          &4Cancel"
+        - "            &7&m     "
+        - ""
+        - " &7• &9Click &aTo Go Cancel &7• "
+  accept:
+    type: ZAUCTIONHOUSE_SELL_INVENTORY_ACCEPT
+    slot: 50
+    item:
+      material: STAINED_GLASS_PANE
+      data: 13 # Vert pour la version 1.8
+      name: '&fSell content'

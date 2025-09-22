@@ -1,0 +1,42 @@
+#
+# Attention, this feature is only available with zMenu
+# https://www.spigotmc.org/resources/zmenu-ultra-complete-menu-plugin.110402/
+#
+
+name: '&8Purchase'
+size: 54
+items:
+  items:
+    type: ZAUCTIONHOUSE_SHOW_ITEMS
+    slots:
+      - 10-16
+      - 19-25
+      - 28-34
+      - 37-43
+  buy:
+    type: ZAUCTIONHOUSE_BUY_CONFIRM
+    item:
+      material: STAINED_GLASS_PANE
+      data: 13 # GREEN pour la version 1.8
+      name: ''
+      lore:
+        - "      &2✔ Purchase"
+        - "           &7&m      "
+        - ""
+        - " &7• &9Click &aTo Purchase &7• "
+    slot: 51
+  deny:
+    type: BACK
+    item:
+      material: STAINED_GLASS_PANE
+      data: 14 # RED pour la version 1.8
+      name: ""
+      lore:
+        - "          &4Back"
+        - "          &7&m      "
+        - ""
+        - " &7• &9Click &aTo Go Back &7• "
+    slot: 47
+  show:
+    type: ZAUCTIONHOUSE_SHOW_BUY  # Type for showing the item being purchased
+    slot: 49  # The slot in the menu where this item will be displayed

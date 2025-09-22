@@ -1,0 +1,47 @@
+name: '&8Remove'
+size: 27
+
+items:
+  remove:
+    type: ZAUCTIONHOUSE_REMOVE_CONFIRM
+    item:
+      material: STAINED_GLASS_PANE
+      data: 13 
+      name: ''
+      lore:
+        - "         &2Remove"
+        - "          &7&m      "
+        - ""
+        - " &7§ &9Click &aTo Remove &7§ "
+    slots:
+    - 0-2
+    - 9-11
+    - 18-20
+  deny:
+    type: BACK
+    item:
+      material: STAINED_GLASS_PANE
+      data: 14 
+      name: ""
+      lore:
+        - "          &4Back"
+        - "          &7&m      "
+        - ""
+        - " &7§ &9Click &aTo Go Back &7§ "
+    slots:
+    - 6-8
+    - 15-17
+    - 24-26
+  slot:
+    item:
+      material: STAINED_GLASS_PANE
+      data: 7 
+      name: '&e'
+    slots:
+    - 3-5
+    - 12
+    - 14
+    - 21-23
+  show:
+    type: ZAUCTIONHOUSE_SHOW_REMOVE
+    slot: 13

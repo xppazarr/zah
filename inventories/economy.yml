@@ -1,0 +1,31 @@
+name: "&8Sell confirm"
+size: 27
+items:
+  VAULT:
+    type: ZAUCTIONHOUSE_ECONOMY
+    economy: "vault" # Economy name, use the same that is present in economies.yml
+    slot: 11
+    item:
+      material: GOLD_INGOT
+      name: "&eVault"
+      lore:
+        - ''
+        - ' &f⌂ &fEconomy&8: &eVault'
+        - ' &f☆ &fPrice&8: &b%price%'
+        - ''
+        - '&8• &fClick &7to use this economy'
+  item:
+    type: ZAUCTIONHOUSE_ECONOMY_ITEM
+    slot: 13
+    item:
+      lore:
+        - "&fYou're going to sell this item !"
+  cancel:
+    closeInventory: true
+    slot: 15
+    item:
+      material: BARRIER
+      name: '&cCancel'
+      lore:
+        - ''
+        - '&7• &fClick &7to cancel'

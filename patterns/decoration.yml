@@ -1,0 +1,15 @@
+name: "zauctionhouse_decoration"
+size: 54
+items:
+  decorations:
+    isPermanent: true
+    item:
+      material: STAINED_GLASS_PANE
+      data: 15
+      name: "&e"
+    slots:
+      - 0-9
+      - 17-18
+      - 26-27
+      - 35-36
+      - 44-53

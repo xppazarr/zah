@@ -1,0 +1,88 @@
+name: '&8Categories'
+size: 54
+
+patterns:
+  - "zauctionhouse_decoration"
+
+items:
+  back:
+    type: BACK
+    slot: 49
+    item:
+      material: BARRIER # Un élément standard pour représenter le retour
+      name: ""
+      lore:
+        - "          &9Back"
+        - "          &8&m     "
+        - ""
+        - " &8• &9Click &aTo Go Back &8• "
+  block:
+    type: ZAUCTIONHOUSE_CATEGORIES
+    category: blocks
+    item:
+      material: GRASS_BLOCK
+      name: '&f'
+      lore:
+        - "                       &9Blocks"
+        - "                         &8&m     "
+        - ""
+        - " &aThere are &d%zauctionhouse_category_item_blocks% &aitems in the block category "
+        - ""
+        - "                  &8• &9Click &aTo Open &8• "
+    slot: 20
+  weapons:
+    type: ZAUCTIONHOUSE_CATEGORIES
+    category: weapons
+    item:
+      material: DIAMOND_SWORD
+      name: '&f'
+      lore:
+        - "                      &9Weapons"
+        - "                         &8&m     "
+        - ""
+        - " &aThere are &d%zauctionhouse_category_item_weapons% &aitems in the weapons category "
+        - ""
+        - "                  &8• &9Click &aTo Open &8• "
+    slot: 21
+  tools:
+    type: ZAUCTIONHOUSE_CATEGORIES
+    category: tools
+    item:
+      material: IRON_AXE
+      name: '&f'
+      lore:
+        - "                       &9Tools"
+        - "                         &8&m     "
+        - ""
+        - " &aThere are &d%zauctionhouse_category_item_tools% &aitems in the tools category "
+        - ""
+        - "                  &8• &9Click &aTo Open &8• "
+    slot: 22
+  potions:
+    type: ZAUCTIONHOUSE_CATEGORIES
+    category: potions
+    item:
+      material: BLAZE_ROD
+      name: '&f'
+      lore:
+        - "                      &9Potions"
+        - "                         &8&m     "
+        - ""
+        - " &aThere are &d%zauctionhouse_category_item_potions% &aitems in the potions category "
+        - ""
+        - "                  &8• &9Click &aTo Open &8• "
+    slot: 23
+  misc:
+    type: ZAUCTIONHOUSE_CATEGORIES
+    category: misc
+    item:
+      material: EXPERIENCE_BOTTLE
+      name: '&f'
+      lore:
+        - "                   &9Miscellaneous"
+        - "                         &8&m     "
+        - ""
+        - " &aThere are &d%zauctionhouse_category_item_misc% &aitems in the miscellaneous category "
+        - ""
+        - "                  &8• &9Click &aTo Open &8• "
+    slot: 24

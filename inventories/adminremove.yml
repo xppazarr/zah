@@ -1,0 +1,73 @@
+name: '&8Admin Remove'
+size: 54
+
+patterns:
+  - "zauctionhouse_decoration"
+
+items:
+  show:
+    type: ZAUCTIONHOUSE_SHOW_ADMIN
+    slot: 22
+  back:
+    type: BACK
+    item:
+      material: STAINED_GLASS_PANE
+      data: 14 # RED pour la version 1.8
+      name: '&cBack'
+    slot: 49
+  removeSilent:
+    type: ZAUCTIONHOUSE_ADMIN_REMOVE
+    item:
+      material: STAINED_CLAY
+      data: 13 # GREEN TERRACOTTA pour la version 1.8
+      name: '&fRemove silent and give item to player'
+      lore:
+      - '&7&m                                     '
+      - '&f&l» &r&7Is silent&7: &atrue'
+      - '&f&l» &r&7Forced removal&7: &cfalse'
+      - '&7&m                                     '
+    isSilent: true
+    isForceRemove: false
+    slot: 30
+  remove:
+    type: ZAUCTIONHOUSE_ADMIN_REMOVE
+    item:
+      material: STAINED_CLAY
+      data: 5 # LIME pour la version 1.8
+      name: '&fRemove and give item to player'
+      lore:
+      - '&7&m                                     '
+      - '&f&l» &r&7Is silent&7: &cfalse'
+      - '&f&l» &r&7Forced removal&7: &cfalse'
+      - '&7&m                                     '
+    isSilent: false
+    isForceRemove: false
+    slot: 29
+  removeSilentForce:
+    type: ZAUCTIONHOUSE_ADMIN_REMOVE
+    item:
+      material: STAINED_CLAY
+      data: 14 # RED TERRACOTTA pour la version 1.8
+      name: '&fRemove silent and remove item from player'
+      lore:
+      - '&7&m                                     '
+      - '&f&l» &r&7Is silent&7: &atrue'
+      - '&f&l» &r&7Forced removal&7: &atrue'
+      - '&7&m                                     '
+    isSilent: true
+    isForceRemove: true
+    slot: 32
+  removeForce:
+    type: ZAUCTIONHOUSE_ADMIN_REMOVE
+    item:
+      material: STAINED_CLAY
+      data: 1 # ORANGE pour la version 1.8
+      name: '&fRemove without give item to player'
+      lore:
+      - '&7&m                                     '
+      - '&f&l» &r&7Is silent&7: &cfalse'
+      - '&f&l» &r&7Forced removal&7: &atrue'
+      - '&7&m                                     '
+    isSilent: false
+    isForceRemove: true
+    slot: 33

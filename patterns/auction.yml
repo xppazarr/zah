@@ -1,0 +1,164 @@
+name: "zauctionhouse_auction"
+size: 54
+items:
+
+  expireItems:
+    type: INVENTORY
+    plugin: zAuctionHouseV3
+    inventory: expire
+    slot: 47
+    isPermanent: true
+    item:
+      url: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjdhYWRmZjlkZGM1NDZmZGNlYzZlZDU5MTljYzM5ZGZhOGQwYzA3ZmY0YmM2MTNhMTlmMmU2ZDdmMjU5MyJ9fX0="
+      name: ""
+      lore:
+        - "        &bExpired items"
+        - "              &8&m     "
+        - ""
+        - " &fYou have #ffacd5%zauctionhouse_expired_item% &fexpired items "
+        - ""
+        - "       &8• &bClick &fto open &8• "
+
+  buyItem:
+    type: INVENTORY
+    plugin: zAuctionHouseV3
+    inventory: buying
+    slot: 48
+    isPermanent: true
+    item:
+      url: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjM3Y2FlNWM1MWViMTU1OGVhODI4ZjU4ZTBkZmY4ZTZiN2IwYjFhMTgzZDczN2VlY2Y3MTQ2NjE3NjEifX19"
+      name: ""
+      lore:
+        - "         &bBought items"
+        - "              &8&m     "
+        - ""
+        - " &fYou have #ffacd5%zauctionhouse_buying_item% &fbought items "
+        - ""
+        - "       &8• &bClick &fto open &8• "
+
+  playerItems:
+    type: INVENTORY
+    plugin: zAuctionHouseV3
+    inventory: items
+    slot: 50
+    isPermanent: true
+    item:
+      url: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjU4MDdjYzRjM2I2OTU4YWVhNjE1NmU4NDUxOGQ5MWE0OWM1ZjMyOTcxZTZlYjI2OWEyM2EyNWEyNzE0NSJ9fX0="
+      name: ""
+      lore:
+        - "        &bYour items"
+        - "            &8&m     "
+        - ""
+        - " &fYou have #ffacd5%zauctionhouse_currents_item% &fyour items "
+        - ""
+        - "     &8• &bClick &fto open &8• "
+
+  categories:
+    type: INVENTORY
+    inventory: categories
+    plugin: zAuctionHouseV3
+    slot: 51
+    isPermanent: true
+    item:
+      url: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZjYzQ4NmMyYmUxY2I5ZGZjYjJlNTNkZDlhM2U5YTg4M2JmYWRiMjdjYjk1NmYxODk2ZDYwMmI0MDY3In19fQ=="
+      name: ""
+      lore:
+        - "    &bCategories"
+        - "         &8&m     "
+        - ""
+        - " &8• &bClick &fto open &8• "
+  informations:
+    type: ZAUCTIONHOUSE_UPDATE
+    slot: 4
+    isPermanent: true
+    item:
+      material: BELL
+      name: '&f'
+      lore:
+        - "                &bInformations"
+        - "                      &8&m     "
+        - ""
+        - "      &fWelcome to the auction house"
+        - " &fIt's a market where all the players "
+        - "          &fcan sell or buy items"
+        - ""
+        - "                 &f→ ᴜsᴀɢᴇ ←"
+        - "       #ffacd5/ah sell &8<&fprice&8> &8[<&famount&8>]"
+        - ""
+        - "             &fNumber of items&8: &b%zauctionhouse_counts%"
+        - "        &fSort type&8: &b%zauctionhouse_sorting%"
+        - ""
+        - "      &8• &bClick &fto update the items &8•"
+        - ""
+
+  change_sort:
+    isPermanent: true
+    type: ZAUCTIONHOUSE_CHANGE_SORT
+    slot: 49
+    item:
+      url: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGIyZWRlYjAxY2RjZTFkMTM1MWQ5YmY3ZmI3NTNiNmY1NzNhNTZiODY0NzcyOTlhNTEwMzNjYWFjODkzOTQwOCJ9fX0="
+      name: "&f"
+      lore:
+        - "                &bSort type"
+        - "                    &8&m     "
+        - ""
+        - "          &f➡ Decreasing date"
+        - "          &8➡ Decreasing price"
+        - "          &8➡ Ascending date"
+        - "          &8➡ Ascending price"
+        - ""
+        - " &8• &bClick &fto change the Sort type &8• "
+    placeholder: "%zauctionhouse_sorting_type%"
+    value: "DECREASING_DATE"
+    action: EQUALS_STRING
+    else:
+      type: ZAUCTIONHOUSE_CHANGE_SORT
+      item:
+        url: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGIyZWRlYjAxY2RjZTFkMTM1MWQ5YmY3ZmI3NTNiNmY1NzNhNTZiODY0NzcyOTlhNTEwMzNjYWFjODkzOTQwOCJ9fX0="
+        name: "&f"
+        lore:
+          - "                &bSort type"
+          - "                    &8&m     "
+          - ""
+          - "          &8➡ Decreasing date"
+          - "          &f➡ Decreasing price"
+          - "          &8➡ Ascending date"
+          - "          &8➡ Ascending price"
+          - ""
+          - " &8• &bClick &fto change the Sort type &8• "
+      placeholder: "%zauctionhouse_sorting_type%"
+      value: "DECREASING_PRICE"
+      action: EQUALS_STRING
+      else:
+        type: ZAUCTIONHOUSE_CHANGE_SORT
+        item:
+          url: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGIyZWRlYjAxY2RjZTFkMTM1MWQ5YmY3ZmI3NTNiNmY1NzNhNTZiODY0NzcyOTlhNTEwMzNjYWFjODkzOTQwOCJ9fX0="
+          name: "&f"
+          lore:
+            - "                &bSort type"
+            - "                    &8&m     "
+            - ""
+            - "          &8➡ Decreasing date"
+            - "          &8➡ Decreasing price"
+            - "          &f➡ Ascending date"
+            - "          &8➡ Ascending price"
+            - ""
+            - " &8• &bClick &fto change the Sort type &8• "
+        placeholder: "%zauctionhouse_sorting_type%"
+        value: "ASCENDING_DATE"
+        action: EQUALS_STRING
+        else:
+          type: ZAUCTIONHOUSE_CHANGE_SORT
+          item:
+            url: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGIyZWRlYjAxY2RjZTFkMTM1MWQ5YmY3ZmI3NTNiNmY1NzNhNTZiODY0NzcyOTlhNTEwMzNjYWFjODkzOTQwOCJ9fX0="
+            name: "&f"
+            lore:
+              - "                &bSort type"
+              - "                    &8&m     "
+              - ""
+              - "          &8➡ Decreasing date"
+              - "          &8➡ Decreasing price"
+              - "          &8➡ Ascending date"
+              - "          &f➡ Ascending price"
+              - ""
+              - " &8• &bClick &fto change the Sort type &8• "

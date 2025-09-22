@@ -1,0 +1,30 @@
+name: '&8Bought Items &8(&f%page%&8/&f%maxPage%&8)'
+size: 54
+
+patterns:
+  - "zauctionhouse_decoration"
+  - "zauctionhouse_pagination"
+  - "zauctionhouse_back"
+
+items:
+  removeall:
+    type: ZAUCTIONHOUSE_REMOVE_ALL_BUYING
+    isPermanent: true
+    slot: 48
+    item:
+      material: BARRIER # Un bloc représentatif pour "supprimer tout" dans Minecraft 1.8
+      name: ''
+      lore:
+        - "         &9Remove Everything"
+        - "                  &8&m     "
+        - ""
+        - " &8• &9Click &aTo Remove Everything &8• "
+
+  items:
+    type: ZAUCTIONHOUSE_BUYING
+    isPermanent: true
+    slots:
+    - 10-16
+    - 19-25
+    - 28-34
+    - 37-43

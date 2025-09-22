@@ -1,0 +1,28 @@
+name: zAuctionHouseV3
+author: Maxlego08
+main: fr.maxlego08.zauctionhouse.ZAuctionPlugin
+version: 3.2.3.7
+softdepend: 
+ - Vault
+ - PlayerPoints
+ - zDiscordApi
+ - TokenManager
+ - MySqlToken
+ - LangUtils
+ - AdvancedEnchantments
+ - Essentials
+ - MySQL-Tokens
+ - HeadDatabase
+ - PlaceholderAPI
+ - EpicHeads
+ - CMI
+ - Citizens
+ - zMenu
+ - CoinsEngine
+ - BeastTokens
+ - zSchedulers
+ - PlayerAuctions
+ - ProtocolLib
+commands:
+api-version: 1.13
+folia-supported: true
